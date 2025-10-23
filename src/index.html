@@ -85,6 +85,14 @@
                                 </div>
                             </div>
                             <div class="card-body">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <input type="checkbox" class="form-check-input" id="select-all-items" 
+                                           title="Select all items">
+                                    <label for="select-all-items" class="form-check-label me-2">Select All</label>
+                                    <input type="number" class="form-control form-control-sm" id="bulk-quantity" 
+                                           placeholder="Quantity" min="0" max="999" style="max-width: 100px;"
+                                           title="Set quantity for all selected items">
+                                </div>
                                 <div class="table-responsive overflow-y-scroll" id="bag-table">
                                     <table class="table table-sm table-hover">
                                         <thead class="sticky-top bg-dark">
