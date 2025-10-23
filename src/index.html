@@ -77,14 +77,24 @@
                     <!-- Bag Editor Card -->
                     <div class="col-12 col-lg-6">
                         <div class="card h-100" id="bag-editor">
-                            <div class="card-header d-flex justify-content-between align-items-center">
-                                <span>Bag Editor</span>
-                                <div>
-                                    <input type="text" class="form-control form-control-sm" id="bag-search"
-                                           placeholder="Search items...">
+                            <div class="card-header text-center">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="flex-grow-1">Bag Editor</span>
+                                    <div>
+                                        <input type="text" class="form-control form-control-sm" id="bag-search"
+                                               placeholder="Search items...">
+                                    </div>
                                 </div>
                             </div>
                             <div class="card-body">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <input type="checkbox" class="form-check-input" id="select-all-items" 
+                                           title="Select all items">
+                                    <label for="select-all-items" class="form-check-label me-2">Select All</label>
+                                    <input type="number" class="form-control form-control-sm" id="bulk-quantity" 
+                                           placeholder="Quantity" min="0" max="999" style="max-width: 100px;"
+                                           title="Set quantity for all selected items">
+                                </div>
                                 <div class="table-responsive overflow-y-scroll" id="bag-table">
                                     <table class="table table-sm table-hover">
                                         <thead class="sticky-top bg-dark">
