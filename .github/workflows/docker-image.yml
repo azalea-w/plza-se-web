@@ -3,9 +3,9 @@ name: Docker Image CI
 on:
   workflow_dispatch:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -24,4 +24,4 @@ jobs:
       run: echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u "azalea-w" --password-stdin
       
     - name: Push Docker image
-      run: docker push ghcr.io/azalea-w/plza-recovery-web:latest
+      run: docker push ghcr.io/azalea-w/plza-se-web:latest
