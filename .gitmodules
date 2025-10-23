@@ -1,0 +1,6 @@
+[submodule "plza-recovery"]
+	path = plza-recovery
+	url = https://github.com/azalea-w/plza-recovery
+[submodule "lib"]
+	path = lib
+	url = https://github.com/azalea-w/plza-save-utils
