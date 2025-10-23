@@ -160,7 +160,7 @@ async def modify_save(body: ModifyRequest):
         if int(_id) not in VALID_ITEMS: continue
         current_entry = bag_save.get_entry(int(_id))
         current_entry.category = item_db[int(_id)]["expected_category"]
-        current_entry.quantity = bag_changes[bag_change]
+        current_entry.quantity = min(max(bag_changes[bag_change], 999), 0)
         bag_save.set_entry(int(_id), current_entry)
 
     if bag_changes:
