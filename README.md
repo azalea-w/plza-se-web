@@ -9,7 +9,7 @@
 This is a tool you can use to edit your Trainer Info and Bag in a web app!
 
 ## How to use
-The site is hosted on [https://edit-pl.azalea.sh/](https://pl.azalea.sh/)!!
+The site is hosted on [https://edit-pl.azalea.sh/](https://edit-pl.azalea.sh/)!!
 
 1. Dump your save file using JKSV or similar
 2. Copy your save file to your PC
